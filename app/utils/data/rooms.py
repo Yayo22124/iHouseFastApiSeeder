@@ -74,6 +74,6 @@ rooms_components = {
     },
     "garages": {
         "sensors": ["Fotorresistencia"],
-        "actuators": ["Puerta", "LED_Interior", "LED_Exterior", "PuertaGaraje"],
+        "actuators": ["Puerta", "LED_Interior", "LED_Exterior", "PuertaGaraje", "Porton"],
     },
 }

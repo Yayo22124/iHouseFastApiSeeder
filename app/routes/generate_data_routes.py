@@ -26,15 +26,33 @@ generate_actuator_data_router = APIRouter(
 
 @generate_sensor_data_router.get("/")
 async def generate_sensor_data(
-    sensorName: str = Query("Temperatura", description="Sensor type to generate data."),
-    location: str = Query("Recámara 1", description="Location of sensor."),
+    sensorName: str = Query(None, description="Sensor type to generate data."),
+    location: str = Query(None, description="Location of sensor."),
     generateNum: int = Query(1, description="Number of documents to generate."),
 ):
     try:
+        if sensorName == None:
+            raise HTTPException(
+                status_code=404,
+                detail="sensorName query param is required.",
+            )
+
+        if location == None:
+            raise HTTPException(
+                status_code=404,
+                detail="location query param is required.",
+            )
+
         if sensorName not in sensors:
             raise HTTPException(
                 status_code=404,
                 detail=f"{sensorName} is not a valid Sensor to generate Data",
+            )
+            
+        if location not in rooms :
+            raise HTTPException(
+                status_code=404,
+                detail=f"{location} is not a valid Location to generate Data"
             )
 
         selected_collection = fn_get_collection_by_location(location);

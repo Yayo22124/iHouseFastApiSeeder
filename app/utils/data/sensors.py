@@ -143,7 +143,7 @@ sensors = {
     },
     "Gas": {
         "type": "Sensor",
-        "name": "MQ-135",
+        "name": "Gas",
         "brand": "Steren",
         "model": "K 1015",
         "specifications": [

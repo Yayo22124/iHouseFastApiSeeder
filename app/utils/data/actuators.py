@@ -111,6 +111,83 @@ actuators = {
             "actions": [{"name": "Activación mecánica", "value": "Abierta"}],
         },
     ],
+    "Porton": [
+        {
+            # "_id": {"$oid": "65dd0ff411bbe96dbfe4b2d6"},
+            "type": "Actuador",
+            "name": "Porton Izquierda",
+            "brand": "TowerPro",
+            "model": "SG90",
+            "specifications": [
+                {
+                    "name": "Velocidad de operación",
+                    "value": 0.12,
+                    "unit": "segundos/60°",
+                },
+                {"name": "Torque", "value": 2.5, "unit": "kg-cm"},
+                {
+                    "name": "Voltage de operación",
+                    "value": 5.0,
+                    "unit": "V",
+                },
+                {
+                    "name": "Corriente de operación",
+                    "value": 10.0,
+                    "unit": "mA",
+                    "type": "VCD",
+                },
+                {
+                    "name": "Consumo eléctrico",
+                    "value": 0.5,
+                    "unit": "W",
+                },
+            ],
+            "location": "",
+            "status": "Disponible",
+            "owner": "",
+            "actions": [
+                {
+                    "name": "Activación mecánica",
+                    "value": "Abierta",
+                }
+            ],
+        },
+        {
+            # "_id": {"$oid": "65dd0ff411bbe96dbfe4b2d6"},
+            "type": "Actuador",
+            "name": "Porton Derecha",
+            "brand": "TowerPro",
+            "model": "SG90",
+            "specifications": [
+                {
+                    "name": "Velocidad de operación",
+                    "value": 0.12,
+                    "unit": "segundos/60°",
+                },
+                {"name": "Torque", "value": 2.5, "unit": "kg-cm"},
+                {
+                    "name": "Voltage de operación",
+                    "value": 5.0,
+                    "unit": "V",
+                },
+                {
+                    "name": "Corriente de operación",
+                    "value": 10.0,
+                    "unit": "mA",
+                    "type": "VCD",
+                },
+                {
+                    "name": "Consumo eléctrico",
+                    "value": 0.5,
+                    "unit": "W",
+                },
+            ],
+            "location": "",
+            "status": "Disponible",
+            "owner": "",
+            "actions": [{"name": "Activación mecánica", "value": "Abierta"}],
+        },
+    ],
     "Ventilador": {
         # "_id": {"$oid": "65d4f24c14a33a3563f3d1ee"},
         "type": "Actuador",

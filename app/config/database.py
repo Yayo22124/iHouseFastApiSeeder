@@ -3,7 +3,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 import os
 
 load_dotenv()
-print(os.getenv("MONGODB_URL"))
+print(os.getenv("MONGODB_LOCAL"))
 
 # Establecer la conexión con la base de datos
 client = AsyncIOMotorClient(os.getenv("MONGODB_URL"))

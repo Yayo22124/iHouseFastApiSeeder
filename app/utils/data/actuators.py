@@ -299,7 +299,7 @@ actuators = {
     },
     "Alarma": {
         "type": "Actuador",
-        "name": "Buzzer",
+        "name": "Alarma",
         "brand": "Genérica",
         "model": "BBZ-01",
         "specifications": [

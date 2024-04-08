@@ -3,10 +3,12 @@ from motor.motor_asyncio import AsyncIOMotorClient
 import os
 
 load_dotenv()
-print(os.getenv("MONGODB_LOCAL"))
+MONGO_CONNECTION_STRING: str = os.getenv("MONGODB_URL");
+
+print(MONGO_CONNECTION_STRING)
 
 # Establecer la conexión con la base de datos
-client = AsyncIOMotorClient(os.getenv("MONGODB_URL"))
+client = AsyncIOMotorClient(MONGO_CONNECTION_STRING)
 database = client.get_database("bd_ihouse")
 
 

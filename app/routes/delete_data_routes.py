@@ -32,7 +32,6 @@ async def delete_all():
     except Exception as err:
         raise HTTPException(status_code=500, detail=str(err))
 
-
 @delete_router.delete(
     "/{collection}", description="Delete all data in a specific collection and specific location."
 )
